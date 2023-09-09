@@ -5,7 +5,7 @@ const Derechos = () => {
     <div className='derechos'>
         <div className='separador'>
         </div>
-    <p>@2023/taekni/todos los derechos</p>
+    <p>@2023/taekni/derechos reservados</p>
   </div>
   )
 }

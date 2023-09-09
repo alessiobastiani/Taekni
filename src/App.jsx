@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar1 from './components/Navbar1';
 import Home from './components/Home';
 import Home2 from './components/Home2';
@@ -15,6 +16,10 @@ import Derechos from './components/Derechos';
 function App() {
   return (
     <div className='app-container'>
+      <Helmet>
+        <title>Desarrollo web Puerto Madryn</title>
+        <meta name="description" content="Desarrollo web profesional en puerto madryn. Programacion y mantenimiento de sitios web con la mejor calidad." />
+      </Helmet>
       <div className='background-image'>
         <Navbar1 />
         <Home />
@@ -36,4 +41,3 @@ function App() {
 }
 
 export default App;
-

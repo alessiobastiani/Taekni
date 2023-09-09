@@ -6,7 +6,7 @@ const Home2 = () => {
     <div className='home2-container'>
         <p>"Estamos comprometidos a ser tu compañero en este camino, ayudándote a convertir tus ideas en experiencias asombrosas y dinámicas".</p>
         <div className='loguito '>
-          <img className='log' src={logo} alt="" />
+          <img className='log' src={logo} alt="Logo de desarrollos web" />
           <p>Tækni</p>
         </div>
     </div>

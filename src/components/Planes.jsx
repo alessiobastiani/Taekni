@@ -23,7 +23,7 @@ const Planes = () => {
         </div>
         <div className='contenedor-targetas d-flex '>
           <Card className="bg-dark text-light" style={{ width: '19rem' }}>
-            <Card.Img variant="top" src={target} />
+            <Card.Img variant="top" src={target} alt='Tarjeta de programacion y desarrollo' />
             <Card.Body>
               <Card.Title>Web Basica</Card.Title>
               <div className='price'>
@@ -39,7 +39,7 @@ const Planes = () => {
             </Card.Body>
           </Card>
           <Card className="bg-dark text-light card" style={{ width: '19rem' }}>
-            <Card.Img variant="top" src={target} />
+            <Card.Img variant="top" src={target} alt='Tarjeta de programacion y desarrollo'/>
             <Card.Body className='body'>
               <Card.Title>Landing Page</Card.Title>
               <div className='price'>

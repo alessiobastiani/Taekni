@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='logo'>
-            <img src={logoo} alt="" />
+            <img src={logoo} alt="Logo de takni desarrollos web" />
             <p>Tækni</p>
         </div>
         <div className='direction'>

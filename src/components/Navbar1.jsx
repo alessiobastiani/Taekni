@@ -11,7 +11,7 @@ const Navbar1 = () => {
         <Navbar key={expand} expand={expand} className="nav mb-3">
           <Container fluid>
             <Navbar.Brand href="#" className='contenedor-logo'>
-              <img className='logo-nav' src={logo} alt="" />
+              <img className='logo-nav' src={logo} alt="Taekni desarrollos web madryn" />
               <p>Tækni</p>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`navbar-expand-${expand}`} />

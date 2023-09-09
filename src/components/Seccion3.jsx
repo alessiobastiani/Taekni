@@ -3,7 +3,7 @@ import celu from '../assets/celu.png'
 const Seccion3 = () => {
   return (
     <div id='servicios' className='seccion-3 d-flex'>
-        <img src={celu} alt="" />
+        <img src={celu} alt="celular con nuestro logo de desarrollo web" />
         <div className='servicios'>
         <div className='dosServicios d-flex'>
           <div className='servicio'>
