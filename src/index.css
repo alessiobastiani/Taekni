@@ -1,0 +1,752 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilo para el contenedor .nav */
+.nav {
+  width: 100%;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* Estilo para enlaces dentro de .nav.mb-3 */
+.nav.mb-3 a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none; /* Agrega esta línea para eliminar la subrayado en los enlaces */
+}
+
+/* Estilo para enlaces visitados dentro de .nav.mb-3 */
+.nav.mb-3 a:visited {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none; /* Agrega esta línea para eliminar la subrayado en los enlaces visitados */
+}
+
+/* Estilo para enlaces al pasar el ratón sobre ellos dentro de .nav.mb-3 */
+.nav.mb-3 a:hover {
+  color: #3EB1BE;
+}
+
+
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logo p {
+    color: #3EB1BE;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.logo-nav {
+    width: 100px;
+    height: 100px;
+}
+
+
+.contenedor-nav {
+    display: flex;
+    align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+/* home */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/photo-1610438250910-01cb769c1334.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Estilos para Home */
+.home-container {
+    position: relative;
+    z-index: 2;
+    height: 100vh; 
+    width: 100%;
+}
+
+.hero {
+    color: white;
+    width: 500px;
+    text-align: left;
+    padding: 20px;
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    transform: none;
+    z-index: 3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero p {
+    font-size: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+  .hero h1{
+    font-size: 30px;
+  }
+  .hero p{
+    font-size: 17px;
+  }
+
+  .home-container .hero{
+    width: 100%;
+  }
+}
+
+/* home2 */
+.home2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 400px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home2-container p{
+    font-size: 30px;
+    width: 700px;
+    color: white;
+}
+
+.loguito{
+    color: #3EB1BE;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+
+ .log{
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:700px){
+  .home2-container p{
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+/* seccion3*/
+
+.seccion-3{
+    background-color:#0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seccion-3 img{
+    width: 300px;
+}
+
+.servicios{
+    width: 60%;
+}
+
+.servicio{
+    padding: 20px;
+    width: 450px;
+    color: white;
+    text-align: center;
+}
+
+.servicio ion-icon {
+    color: #3EB1BE;
+    font-size: 4rem;
+  }
+
+  @media(max-width:850px){
+    .seccion-3{
+      flex-direction: column;
+    }
+    .dosServicios{
+      flex-direction: column;
+    }
+    .servicios{
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media(max-width: 460px){
+    .servicio{
+      font-size: 17px;
+      width: 100%;
+    }
+  }
+
+  /* nosotros1*/
+
+  .nosotros1 {
+    background-color: whitesmoke;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.nosotros1 .text{
+    width: 45%;
+    text-align: center;
+    padding: 25px;
+    color: black;
+}
+
+.nosotros1 .text h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-family: 'Staatliches', cursive;
+}
+.nosotros1 .text p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  .skils ion-icon{
+    font-size: 7rem;
+  }
+
+ @media(max-width: 930px){
+  .nosotros1{
+    flex-direction: column;
+    height: auto;
+  }
+  .nosotros1 .text{
+    width: 90%;
+    margin: auto;
+  }
+  .nosotros1 .skils{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ }
+
+
+  /* nosotros2*/
+  .nosotros2{
+    background-color: #0D0D0D;
+    height:500px ;
+    align-items: center;
+  }
+
+  .nosotros2 img{
+    width: 600px;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .nosotros2  .texto{
+    color: white;
+    text-align: center;
+    width: 650px;
+    margin: auto;
+  }
+
+  .nosotros2  .texto h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .nosotros2  .texto p{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  @media(max-width: 1000px){
+    .nosotros2{
+      flex-direction: column;
+      height: auto;
+    }
+    .nosotros2 .texto{
+      width: 90%;
+      margin: auto;
+
+    }
+
+    .nosotros2 img{
+      margin: 0;
+    }
+    .nosotros2 .texto h2{
+      font-size: 30px;
+    }
+    .nosotros2 .texto p{
+      font-size: 17px;
+    }
+  }
+
+  /* targetass*/
+
+  @media(max-width: 850px){
+    .planes-contenedor{
+      height: auto;
+    }
+  }
+
+  .cotizacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+
+  .cotizacion h3{
+    font-weight: bold;
+    text-align: center;
+  }
+
+.cotizacion p{
+  color: #3EB1BE;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+  .planes-contenedor{
+    background-color: whitesmoke;
+    height: auto;
+  }
+
+.text-title{
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+}
+
+.text-title h3{
+  font-family: 'Staatliches', cursive;
+  font-size: 37px;
+}
+.text-title p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ .contenedor-targetas{
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 70px;
+ } 
+
+.button{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+.button:hover {
+  letter-spacing: 0.25em;
+  background: #3EB1BE;
+  color: #3EB1BE;
+  box-shadow: 0 0 45px #3EB1BE;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #3EB1BE;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.button i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #3EB1BE;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+
+@media(max-width: 850px){
+  .planes-contenedor{
+    height: auto;
+  }
+}
+
+@media(max-width:600px){
+  .contenedor-targetas{
+    flex-direction: column;
+  }
+
+}
+
+
+/* AUTOIMPORTACION*/
+
+.fondo-proyect {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url(../src/assets/fondocafe.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  /* Añade un pseudo-elemento ::before para el oscurecimiento */
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+  }
+}
+.proyect{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+@media(max-width: 600px){
+  .fondo-proyect{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*formulario*/
+
+.formu {
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+.fomulariobg{
+  background-color: #0D0D0D;
+  width: 100%;
+  height: 500px;
+}
+
+.formulario {
+  width: 700px;
+  background-color: #0D0D0D;
+  margin: auto;
+  display: grid;
+  padding: 20px;
+  border-radius: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contactanos contactanos" "nombre       email" "tel          asunto" "mensaje      mensaje" "boton        boton";
+  margin-top: 30px;
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+.formulario label input {
+  background-color: #0D0D0D;
+  border: 1px solid;
+  border-bottom: 1px solid white;
+  padding: 5px;
+  color: white;
+}
+.formulario label textarea {
+  background-color: #0D0D0D;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px;
+  color: white;
+}
+.formulario button {
+  background-color: #3EB1BE;
+  border: none;
+  width: 98%;
+  margin: auto;
+}
+.formulario button:hover {
+  background-color: #3EB1BE;
+}
+.formulario h2 {
+  grid-area: contactanos;
+  color: white;
+  padding: 10px;
+}
+.formulario label:nth-child(2) {
+  grid-area: nombre;
+}
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+.formulario label:nth-child(4) {
+  grid-area: tel;
+}
+.formulario label:nth-child(5) {
+  grid-area: asunto;
+}
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
+}
+.formulario button {
+  grid-area: boton;
+}
+
+@media (max-width: 740px) {
+  .formulario {
+    width: 95%;
+    background-color: #0D0D0D;
+    margin: auto;
+    display: grid;
+    border-radius: none;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactanos" "nombre" "email" "tel" "asunto" "mensaje " "boton";
+    margin-bottom: 30px;
+  }
+  .fomulariobg{
+    height: auto;
+  }
+}
+
+/* fotters*/
+.contenedor-footer{
+  width: 100%;
+  background-color: black;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor-footer .redes{
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+.contenedor-footer .logo {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.contenedor-footer .logo img{
+  width: 230px;
+  height: 230px;
+}
+
+.direction{
+  color: whitesmoke;
+}
+
+.direction p{
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+.buttonf {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.buttonf:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}
+
+.child ion-icon {
+  color: white; /* Color blanco por defecto */
+}
+
+.child:hover ion-icon {
+  color: #3EB1BE; /* Cambia el color al hacer hover */
+}
+
+.derechos{
+  background-color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.derechos p{
+  margin-top: 7px;
+}
+
+.derechos .separador{
+  border: 0.5px solid #0D0D0D;
+  width: 80%;
+  margin: auto;
+}
+
+@media(max-width: 800px){
+  .contenedor-footer{
+    height: auto;
+    flex-direction: column;
+  }
+  .contenedor-footer .redes{
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-footer .redes{
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+  .contenedor-footer .logo img{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+/* wsp*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp a{
+  text-decoration: none;
+}
+
+.btn-wsp ion-icon {
+  color: white; /* Color verde de WhatsApp */
+  font-size: 30px; 
+  margin-top: 12px;
+}
