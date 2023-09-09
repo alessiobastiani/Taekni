@@ -6,6 +6,14 @@
     
 }
 
+body {
+  overflow-x: hidden; /* Para ocultar la barra de desplazamiento horizontal */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Estilo para el contenedor .nav */
 .nav {
   width: 100%;
@@ -94,10 +102,8 @@
     width: 500px;
     text-align: left;
     padding: 20px;
-    position: absolute;
     top: 20px; 
     left: 20px;
-    transform: none;
     z-index: 3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
@@ -266,7 +272,7 @@
   /* nosotros2*/
   .nosotros2{
     background-color: #0D0D0D;
-    height:500px ;
+    height: auto;
     align-items: center;
   }
 
