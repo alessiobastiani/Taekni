@@ -3,6 +3,18 @@ import Card from 'react-bootstrap/Card';
 import target from '../assets/target.jpg'
 
 const Planes = () => {
+    // Function to open WhatsApp when the button is clicked
+    const openWhatsApp = () => {
+      // Replace '123456789' with your actual WhatsApp number
+      const phoneNumber = '542804030980';
+      const message = 'Hola, estoy interesado en tus servicios.';
+  
+      // Construct the WhatsApp URL
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  
+      // Open WhatsApp in a new tab/window
+      window.open(whatsappURL, '_blank');
+    };
   return (
     <div id='desarrollo' className='planes-contenedor'>
         <div className='text-title'>
@@ -21,7 +33,7 @@ const Planes = () => {
               <Card.Text>
               Diseño de sitio web  ideal para pequeñas tiendas con la capacidad de mostrar varias imágenes divididas en secciones, enfocándose en la mejor optimización y seguridad.
               </Card.Text>
-              <button className='button'>
+              <button className='button' onClick={openWhatsApp}>
                 <span>Empezar</span><i></i>
               </button>
             </Card.Body>
@@ -37,7 +49,7 @@ const Planes = () => {
               <Card.Text>
               Diseño de sitio web estático, perfecto para promocionar tu marca y atraer Muchos mas clientes a tu bolsa de trabajo, con un enfoque en la máxima optimización y seguridad.
               </Card.Text>
-              <button className='button'>
+              <button className='button' onClick={openWhatsApp}>
                 <span>Empezar</span><i></i>
               </button>
             </Card.Body>
